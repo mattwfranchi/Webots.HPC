@@ -1,0 +1,227 @@
+#VRML_OBJ R2020a utf8
+DEF WEBOTS_VEHICLE0 LincolnMKZ {
+  hidden position_0_0 0.0061773857918362585
+  hidden position2_0_0 0.29475697246752536
+  hidden position_0_1 0.006202563740385288
+  hidden position2_0_1 0.294692917943768
+  hidden position_0_2 0.2939678146692121
+  hidden position_0_3 0.2938967646275801
+  hidden linearVelocity_0 -0.003332862507618069 -0.3219586629692863 1.0296678387812364
+  hidden angularVelocity_0 -0.028305616778108493 -0.0017545325500931068 -0.0005188026562341361
+  hidden rotation_1 0.02080106562842435 0.9997788654512856 0.0030880196991418655 0.29482122757352786
+  hidden linearVelocity_1 -0.005827854566361294 0.0022041668436622616 1.03305492191478
+  hidden angularVelocity_1 2.926431435424103 -0.0003180519915771884 0.01804175935108588
+  hidden rotation_2 -0.020890414106413353 -0.9997769635660791 0.0031006001118216013 0.29475771212818663
+  hidden linearVelocity_2 -0.005835270113763481 0.0021609994835908733 1.0307736622582147
+  hidden angularVelocity_2 2.925131461065021 -0.0002439308833727615 0.018107692944743837
+  hidden rotation_3 0 1 0 0.29396781466921285
+  hidden linearVelocity_3 -0.00041165879186298726 -0.009231056564500623 1.0276972744455553
+  hidden angularVelocity_3 2.923422988560701 -0.0020265323884912784 -0.0001811818523443176
+  hidden rotation_4 0 -1 0 0.2938967646275796
+  hidden linearVelocity_4 -0.0004151674421146665 -0.00924253532398037 1.0253754842342222
+  hidden angularVelocity_4 2.9221002908751523 -0.0020047330890225526 -0.0001818249821731324
+  translation -6.7100411281547885 0.2701861279428142 47.06570596422625
+  rotation 0.999856943863108 0.0126842289757376 0.011189376390880374 -0.008593768415458685
+  controller "highway_overtake"
+  sensorsSlotFront [
+    DEF FRONT_RIGHT_LIDAR IbeoLux {
+      translation -0.71 0 -0.2251666
+      rotation 0 -1 0 3.9269908
+      name "ibeo 1"
+      useExtendedFieldOfView TRUE
+    }
+    DEF FRONT_LEFT_LIDAR IbeoLux {
+      translation 0.71 0 -0.225
+      rotation 0 -1 0 2.39
+      name "ibeo 2"
+      useExtendedFieldOfView TRUE
+    }
+    DEF FRONT DistanceSensor {
+      translation 0 0.3 -0.14
+      rotation 0 1 0 4.712389
+      name "distance sensor front"
+      lookupTable [
+        0 0 0
+        20 20 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_RIGHT_0 DistanceSensor {
+      translation -0.64512585 0.3 -0.29286095
+      rotation 0 1 0 4.5814897
+      name "distance sensor front right 0"
+      lookupTable [
+        0 0 0
+        20 20 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_RIGHT_1 DistanceSensor {
+      translation -0.64512585 0.3 -0.29286095
+      rotation 0 1 0 4.4505903
+      name "distance sensor front right 1"
+      lookupTable [
+        0 0 0
+        15 15 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_RIGHT_2 DistanceSensor {
+      translation -0.64512585 0.3 -0.29286095
+      rotation 0 1 0 4.3196903
+      name "distance sensor front right 2"
+      lookupTable [
+        0 0 0
+        10 10 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_LEFT_0 DistanceSensor {
+      translation 0.650126 0.3 -0.28420069
+      rotation 0 1 0 4.8432897
+      name "distance sensor front left 0"
+      lookupTable [
+        0 0 0
+        20 20 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_LEFT_1 DistanceSensor {
+      translation 0.650126 0.3 -0.28420069
+      rotation 0 1 0 4.9741897
+      name "distance sensor front left 1"
+      lookupTable [
+        0 0 0
+        15 15 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    DEF FRONT_LEFT_2 DistanceSensor {
+      translation 0.650126 0.3 -0.28420069
+      rotation 0 1 0 5.1050897
+      name "distance sensor front left 2"
+      lookupTable [
+        0 0 0
+        10 10 0
+      ]
+      numberOfRays 2
+      aperture 0.1
+    }
+    Robot {
+      translation 0 -5.1051227e-09 0.11
+      rotation 4.7948965e-09 -1 -2.3205103e-08 3.1415927
+      children [
+        Radar {
+          maxRange 60
+          horizontalFieldOfView 0.9
+          verticalFieldOfView 0.07854
+          minRadialSpeed -100
+          maxRadialSpeed 40
+          cellDistance 2
+          rangeNoise 0.25
+          speedNoise 0.12
+          angularNoise 0.001
+          frequency 76.5
+          transmittedPower 31
+          minDetectableSignal -80
+          occlusion TRUE
+        }
+      ]
+      controller "radar_target_tracker"
+      supervisor TRUE
+    }
+  ]
+  sensorsSlotRear [
+    DEF REAR DistanceSensor {
+      translation 0 0.3 0
+      rotation 0 1 0 4.712389
+      name "distance sensor rear"
+      lookupTable [
+        0 0 0
+        10 10 0
+      ]
+      numberOfRays 2
+      aperture 0.2
+    }
+    DEF REAR_LEFT DistanceSensor {
+      translation -0.70512585 0.3 -0.1889379
+      rotation 0 1 0 4.1887902
+      name "distance sensor rear left"
+      lookupTable [
+        0 0 0
+        10 10 0
+      ]
+      numberOfRays 2
+      aperture 0.2
+    }
+    DEF REAR_RIGHT DistanceSensor {
+      translation 0.705126 0.3 -0.1889379
+      rotation 0 -1 0 1.0471975
+      name "distance sensor rear right"
+      lookupTable [
+        0 0 0
+        10 10 0
+      ]
+      numberOfRays 2
+      aperture 0.2
+    }
+    DEF REAR_LEFT_LIDAR IbeoLux {
+      translation -0.745 0 -0.16454482
+      rotation 0 1 0 2.42
+      name "ibeo 3"
+      useExtendedFieldOfView TRUE
+    }
+    DEF REAR_RIGHT_LIDAR IbeoLux {
+      translation 0.75850978 0 -0.18985653
+      rotation 0 -1 0 2.35
+      name "ibeo 4"
+      useExtendedFieldOfView TRUE
+    }
+  ]
+  sensorsSlotTop [
+    DEF TOP_CAMERA Camera {
+      translation 0 0 -0.48
+      width 512
+      height 256
+      near 1
+      far 1000
+      motionBlur 200
+      recognition Recognition {
+      }
+      lensFlare LensFlare {
+      }
+    }
+  ]
+  sensorsSlotCenter [
+    DEF RIGHT DistanceSensor {
+      translation 0.9 0.3 -1.32
+      name "distance sensor right"
+      lookupTable [
+        0 0 0
+        4 4 0
+      ]
+      numberOfRays 2
+      aperture 0.9
+    }
+    DEF LEFT DistanceSensor {
+      translation -0.9 0.3 -1.32
+      rotation 0 1 0 3.1415926
+      name "distance sensor left"
+      lookupTable [
+        0 0 0
+        4 4 0
+      ]
+      numberOfRays 2
+      aperture 0.9
+    }
+    GPS {
+      translation 0 0 -5.03
+    }
+  ]
+}

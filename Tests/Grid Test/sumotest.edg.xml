@@ -1,0 +1,37 @@
+<edges>
+     <edge id="e1" from="1" to="2" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e2" from="2" to="3" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e3" from="4" to="5" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e4" from="5" to="6" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e5" from="7" to="8" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e6" from="8" to="9" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e7" from="10" to="11" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e8" from="11" to="12" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e9" from="13" to="14" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e10" from="14" to="15" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e11" from="16" to="17" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e12" from="17" to="18" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e13" from="1" to="4" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e14" from="4" to="7" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e15" from="7" to="10" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e16" from="10" to="13" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e17" from="13" to="16" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e18" from="2" to="5" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e19" from="5" to="8" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e20" from="8" to="11" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e21" from="11" to="14" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e22" from="14" to="17" priority="2" numLanes="2" speed="14.0" />
+
+     <edge id="e23" from="3" to="6" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e24" from="6" to="9" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e25" from="9" to="12" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e26" from="12" to="15" priority="2" numLanes="2" speed="14.0" />
+     <edge id="e27" from="15" to="18" priority="2" numLanes="2" speed="14.0" />
+</edges>
