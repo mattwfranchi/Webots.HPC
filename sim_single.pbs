@@ -4,4 +4,4 @@
 #PBS -q dicelab
 module purge
 echo Starting Webots on 'hostname'
-singularity exec -B $TMPDIR:$TMPDIR webots_sumo xvfb-run webots --stdout --stderr --batch --mode=realtime Merging/worlds/LinkonMKZmyMap.wbt
+singularity exec -B $TMPDIR:$TMPDIR webots_sumo xvfb-run webots --stdout --stderr --batch --mode=realtime Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt

@@ -8,8 +8,8 @@ library(dse)
 library(ggplot2)
 library(reshape)
 
-# Update Working Directory to CAVSITAW Repo
-setwd("~/Repos/CAVSITAW")
+# Update Working Directory to Webots.HPC Repo
+setwd("~/Repos/Webots.HPC")
 
 # File Input 
 filename <- file.choose()

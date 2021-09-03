@@ -6,12 +6,12 @@
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
     <input>
-        <net-file value="/home/mwfranc/CAVSITAW/Merging/worlds/LinkonMKZmyMap_5_net/sumo.net.xml"/>
-        <route-files value="/home/mwfranc/CAVSITAW/Merging/worlds/LinkonMKZmyMap_5_net/sumo.flow.xml"/>
+        <net-file value="/home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_5_net/sumo.net.xml"/>
+        <route-files value="/home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_5_net/sumo.flow.xml"/>
     </input>
 
     <output>
-        <output-file value="/home/mwfranc/CAVSITAW/Merging/worlds/LinkonMKZmyMap_5_net/sumo.rou.xml"/>
+        <output-file value="/home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_5_net/sumo.rou.xml"/>
     </output>
 
     <processing>
