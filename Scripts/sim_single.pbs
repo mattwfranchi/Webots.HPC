@@ -2,6 +2,36 @@
 #PBS -N webots
 #PBS -l select=1:ncpus=40:mem=748gb:ngpus=1:gpu_model=v100:interconnect=hdr,walltime=00:10:00
 #PBS -q dicelab
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]; do
+  key="$1"
+
+  case $key in
+    -d|--dir)
+      DIRECTORY="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    --default)
+      DEFAULT=YES
+      shift # past argument
+      ;;
+    *)    # unknown option
+      POSITIONAL+=("$1") # save it in an array for later
+      shift # past argument
+      ;;
+  esac
+done
+
+set -- "${POSITIONAL[@]}" # restore positional parameters
+
+if [[ -n $1 ]]; then
+    echo "Last line of file specified as non-opt/last argument:"
+    tail -1 "$1"
+fi
+
+
 module purge
 echo Starting Webots on 'hostname'
-singularity exec -B $TMPDIR:$TMPDIR webots_sumo xvfb-run webots --stdout --stderr --batch --mode=realtime Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
+singularity exec -B $TMPDIR:$TMPDIR webots_sumo xvfb-run webots --stdout --stderr --batch --mode=realtime ${DIRECTORY}
