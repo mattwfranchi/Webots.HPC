@@ -9,7 +9,7 @@ Help()
   echo "Syntax: webotshpc_batch.sh [-d|r]"
   echo "options:"
   echo "h             Display script help"
-  echo "d <string>    Simulation file directory"
+  echo "j <string>    Job file directory"
   echo "r <int>       Number of runs in the sequence"
   echo
 }
@@ -49,7 +49,17 @@ shift $((OPTIND-1))
 echo "Webots.HPC: Batch of Simulations Script";
 echo
 echo "---------- User Input Validation ----------";
-echo "Simulation Directory: $Directory"
+echo "Job (.pbs) File Directory: $Directory"
 echo "Number of Runs: $Num_runs"
 echo "-------------------------------------------";
 echo
+
+# Triggering Jobs
+job=$(qsub $Directory)
+echo "Triggering Job 1: $job"
+for ((i = 2; i <= Num_runs; i++))
+do
+	job_next=$(qsub -W depend=afterany:$job sim_parallel_6x2.pbs)
+	echo "Triggering Job $i: $job_next"
+	job=$job_next
+done
