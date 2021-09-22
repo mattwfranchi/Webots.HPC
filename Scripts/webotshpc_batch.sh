@@ -10,7 +10,7 @@ Help()
   echo "options:"
   echo "h             Display script help"
   echo "j <string>    Job file directory"
-  echo "r <int>       Number of runs in the sequence"
+  echo "n <int>       Number of runs in the sequence"
   echo
 }
 
@@ -28,14 +28,14 @@ Num_runs=1
 # Process the input options. Add options as needed.        #
 ############################################################
 # Get the options
-while getopts "hd:r:" o; do
+while getopts "hj:n:" o; do
   case "${o}" in
     h) # display help
     Help
     exit;;
-    d) # Enter a directory
+    j) # Enter a directory
     Directory=${OPTARG};;
-    r) # Enter the number of runs
+    n) # Enter the number of runs
     Num_runs=${OPTARG};;
     \?) # Invalid option
     echo "Error: Invalid option"
