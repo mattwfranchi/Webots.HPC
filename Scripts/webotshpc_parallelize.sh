@@ -1,4 +1,28 @@
 #!/bin/bash
+############################################################
+# Help                                                     #
+############################################################
+Help()
+{
+  # Display Help
+  echo
+  echo "Syntax: webotshpc_parallelize.sh [-j|n|q|s|c|m|i|w]"
+  echo "options:"
+  echo "h             Display script help"
+  echo "j <string>    Job name"
+  echo "n <int>       Number of instances to trigger in batch"
+  echo "q <string>    Queue name"
+  echo "s <int>       Select (# of compute nodes to distribute across)"
+  echo "c <int>       Number of CPUs to request per node"
+  echo "m <string>    Amount of memory to request per node"
+  echo "i <string>    Type of interconnect to request"
+  echo "w <string>    Walltime to request"
+  echo
+}
+
+############################################################
+############################################################
+
 
 # Assigning variables
 Job_name='webots.hpc_job'
@@ -47,8 +71,8 @@ shift $((OPTIND-1))
 #PBS -q $Queue
 
 
-#echo Generating new random routes...
-#singularity exec -B $TMPDIR:$TMPDIR ../webots_sumo.sif /usr/local/webots/projects/default/resources/sumo/bin/duarouter --route-files /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/sumo.flow.xml --net-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/sumo.net.xml --output-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/#sumo.rou.xml --randomize-flows true --seed $RANDOM
+echo Generating new random routes...
+singularity exec -B $TMPDIR:$TMPDIR ../webots_sumo.sif /usr/local/webots/projects/default/resources/sumo/bin/duarouter --route-files /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/sumo.flow.xml --net-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/sumo.net.xml --output-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8))_net/sumo.rou.xml --randomize-flows true --seed $RANDOM
 
 #echo Starting Webots on 'hostname'
 #singularity exec -B $TMPDIR:$TMPDIR ../webots_sumo.sif xvfb-run -a webots --stdout --stderr --batch --mode=realtime Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap_$(($PBS_ARRAY_INDEX % 8)).wbt
