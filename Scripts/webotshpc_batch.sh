@@ -54,12 +54,13 @@ echo "Number of Runs: $Num_runs"
 echo "-------------------------------------------";
 echo
 
+
 # Triggering Jobs
 job=$(qsub $Directory)
 echo "Triggering Job 1: $job"
 for ((i = 2; i <= Num_runs; i++))
 do
-	job_next=$(qsub -W depend=afterany:$job sim_parallel_6x2.pbs)
+	job_next=$(qsub -W depend=afterany:$job $Directory)
 	echo "Triggering Job $i: $job_next"
 	job=$job_next
 done
