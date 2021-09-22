@@ -5,14 +5,12 @@
 Help()
 {
    # Display Help
-   echo "Add description of the script functions here."
    echo
-   echo "Syntax: scriptTemplate [-g|h|v|V]"
+   echo "Syntax: scriptTemplate [-d|r]"
    echo "options:"
-   echo "g     Print the GPL license notification."
-   echo "h     Print this Help."
-   echo "v     Verbose mode."
-   echo "V     Print software version and exit."
+   echo "h     Display script help"
+   echo "d     Simulation file directory"
+   echo "r     Number of runs in the sequence"
    echo
 }
 
@@ -26,15 +24,30 @@ Help()
 Directory="./"
 Num_runs=1
 
-while getopts ":dr:" option; do
+############################################################
+# Process the input options. Add options as needed.        #
+############################################################
+# Get the options
+while getopts ":drh:" option; do
   case $option in
-    d) Directory=$OPTARG;;
-    r) Num_runs=$OPTARG;;
+    h) # display help
+        Help
+        exit;;
+    d) # Enter a directory
+       Directory=$OPTARG;;
+    r) # Enter the number of runs
+       Num_runs=$OPTARG;;
+   \?) # Invalid option
+       echo "Error: Invalid option"
+       exit;; 
   esac
 done
 
-
+# Intro Message and User Input Validation
 echo "Webots.HPC: Batch of Simulations Script";
-echo "User Input Validation: ";
-echo "Simulation Directory: $directory";
-echo "Number of Runs: $num_runs";
+echo
+echo "---------- User Input Validation ----------";
+echo "Simulation Directory: $Directory"
+echo "Number of Runs: $Num_runs"
+echo "-------------------------------------------";
+echo
