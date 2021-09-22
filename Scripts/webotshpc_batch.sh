@@ -4,14 +4,14 @@
 ############################################################
 Help()
 {
-   # Display Help
-   echo
-   echo "Syntax: scriptTemplate [-d|r]"
-   echo "options:"
-   echo "h     Display script help"
-   echo "d     Simulation file directory"
-   echo "r     Number of runs in the sequence"
-   echo
+  # Display Help
+  echo
+  echo "Syntax: scriptTemplate [-d|r]"
+  echo "options:"
+  echo "h     Display script help"
+  echo "d     Simulation file directory"
+  echo "r     Number of runs in the sequence"
+  echo
 }
 
 ############################################################
@@ -21,25 +21,25 @@ Help()
 ############################################################
 
 # Set default variables
-Directory="./"
-Num_runs=1
+Directory='./'
+Num_runs='1'
 
 ############################################################
 # Process the input options. Add options as needed.        #
 ############################################################
 # Get the options
-while getopts ":drh:" option; do
-  case $option in
+while getopts "hd:r:" option; do
+  case "{$option}" in
     h) # display help
-        Help
-        exit;;
+    Help
+    exit;;
     d) # Enter a directory
-       Directory=$OPTARG;;
+    Directory="${OPTARG}";;
     r) # Enter the number of runs
-       Num_runs=$OPTARG;;
-   \?) # Invalid option
-       echo "Error: Invalid option"
-       exit;; 
+    Num_runs="${OPTARG}";;
+    \?) # Invalid option
+    echo "Error: Invalid option"
+    exit;;
   esac
 done
 
