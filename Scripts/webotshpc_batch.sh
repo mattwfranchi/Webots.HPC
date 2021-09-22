@@ -6,11 +6,11 @@ Help()
 {
   # Display Help
   echo
-  echo "Syntax: scriptTemplate [-d|r]"
+  echo "Syntax: webotshpc_batch.sh [-d|r]"
   echo "options:"
-  echo "h     Display script help"
-  echo "d     Simulation file directory"
-  echo "r     Number of runs in the sequence"
+  echo "h             Display script help"
+  echo "d <string>    Simulation file directory"
+  echo "r <int>       Number of runs in the sequence"
   echo
 }
 
@@ -22,26 +22,28 @@ Help()
 
 # Set default variables
 Directory='./'
-Num_runs='1'
+Num_runs=1
 
 ############################################################
 # Process the input options. Add options as needed.        #
 ############################################################
 # Get the options
-while getopts "hd:r:" option; do
-  case "{$option}" in
+while getopts "hd:r:" o; do
+  case "${o}" in
     h) # display help
     Help
     exit;;
     d) # Enter a directory
-    Directory="${OPTARG}";;
+    Directory=${OPTARG};;
     r) # Enter the number of runs
-    Num_runs="${OPTARG}";;
+    Num_runs=${OPTARG};;
     \?) # Invalid option
     echo "Error: Invalid option"
+    Help
     exit;;
   esac
 done
+shift $((OPTIND-1))
 
 # Intro Message and User Input Validation
 echo "Webots.HPC: Batch of Simulations Script";
