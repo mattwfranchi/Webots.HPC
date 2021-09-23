@@ -1,4 +1,0 @@
-<flows>
-	<vType id="type1" minGap=".01" length="1.5"/>
-	<flow id="1" from="334781289_2" to="-119097" begin="0" end="300" period="0.1" departLane="free" departPos="last" departSpeed="random" type="type1"/>  <!--mainlineflow-->
-</flows>
