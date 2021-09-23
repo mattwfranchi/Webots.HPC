@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo Generating new random routes...
-singularity exec -B $TMPDIR:$TMPDIR webots_sumo.sif /usr/local/webots/projects/default/resources/sumo/bin/duarouter --route-files ../Simulations/HighwayMerge/worlds/LinkonMKZmyMap_net/sumo.flow.xml --net-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap/sumo.rou.xml --randomize-flows true --seed $RANDOM
+#singularity exec -B $TMPDIR:$TMPDIR webots_sumo.sif /usr/local/webots/projects/default/resources/sumo/bin/duarouter --route-files ../Simulations/HighwayMerge/worlds/LinkonMKZmyMap_net/sumo.flow.xml --net-file /home/mwfranc/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap/sumo.rou.xml --randomize-flows true --seed $RANDOM
 
 
 echo Starting Webots on 'hostname'
-singularity exec -B $TMPDIR:$TMPDIR webots_sumo.sif xvfb-run -a webots --stdout --stderr --batch --mode=realtime ../Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
-sed -r 's/(.*)(\?port )([0-9]+)(.*)/echo "\1\2$((\3+1))\4"/ge' ../Simulations/HighWayMerge/worlds/LinkonMKZmyMap.wbt
+#singularity exec -B $TMPDIR:$TMPDIR webots_sumo.sif xvfb-run -a webots --stdout --stderr --batch --mode=realtime ../Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
+sed -r 's/(.*)(\?port )([0-9]+)(.*)/echo "\1\2$((\3+1))\4"/ge' ~/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
