@@ -32,11 +32,11 @@ Help()
 
 # Assigning variables
 Job_name='webots.hpc_job'
-Num_instances=1
+Num_instances=4
 Queue=''
 Select=1
-Ncpus=1
-Memory="4gb"
+Ncpus=5
+Memory="93gb"
 Interconnect="hdr"
 Walltime="00:45:00"
 
@@ -70,7 +70,29 @@ while getopts "hj:n:q:s:c:m:i:w" o; do
 done
 shift $((OPTIND-1))
 
+
+# Intro Message
+echo "Webots.HPC: Parallelized Job Submission Script"
+echo
+echo "-------------- Summary of Resources Requested --------------"
+echo "Number of Instances to Trigger: 		$Num_instances"
+echo "Number of Nodes to Request (Select): 	$Select"
+echo "Number of CPUs to Request:		$Ncpus"
+echo "Amount of Memory to Request:		$Memory"
+echo "Type of Interconnect:			$Interconnect"
+echo "Walltime Requested:			$Walltime"
+echo "Job Queue (If Specified):			$Queue"
+echo "------------------------------------------------------------"
+echo
+
 # Triggering Customized Job
 
-qsub -J 1-$Num_instances -l select=$Select:ncpus=$Ncpus:mem=$Memory:interconnect=$Interconnect,
-  walltime=$Walltime $Job_name
+if [ -z "$Queue" ]
+then
+	echo
+	echo "No queue specified, so using default." 	
+	qsub -J 1-$Num_instances -l select=$Select:ncpus=$Ncpus:mem=$Memory:interconnect=$Interconnect,walltime=$Walltime $Job_name
+else
+	qsub -q $Queue -J 1-$Num_instances -l select=$Select:ncpus=$Ncpus:mem=$Memory:interconnect=$Interconnect,walltime=$Walltime $Job_name
+fi
+
