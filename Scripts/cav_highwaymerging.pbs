@@ -6,4 +6,4 @@ echo Generating new random routes...
 
 echo Starting Webots on 'hostname'
 #singularity exec -B $TMPDIR:$TMPDIR webots_sumo.sif xvfb-run -a webots --stdout --stderr --batch --mode=realtime ../Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
-sed -r 's/(.*)(\?port )([0-9]+)(.*)/echo "\1\2$((\3+1))\4"/ge' ~/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
+awk -i inplace -F= -v OFS== '$1 == "port"{$2++} 1'  ~/Webots.HPC/Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
