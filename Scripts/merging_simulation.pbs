@@ -1,9 +1,0 @@
-#!/bin/bash
-#PBS -N webots
-#PBS -l select=1:ncpus=40:mem=748gb:ngpus=1:gpu_model=v100:interconnect=hdr,walltime=02:00:00
-#PBS -J 1-5
-#PBS -q dicelab
-module purge
-echo Starting Webots on 'hostname'
-singularity exec -B $TMPDIR:$TMPDIR webots_sumo xvfb-run webots --stdout --stderr --batch --mode=realtime Simulations/HighwayMerge/worlds/LinkonMKZmyMap.wbt
- 
