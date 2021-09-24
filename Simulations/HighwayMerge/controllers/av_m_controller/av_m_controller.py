@@ -80,7 +80,7 @@ touch_rear.enable(50)
 # save trajectory data from SUMO
 
 proj_cwd = os.getcwd()
-proj_cwd = os.path.abspath(__file__+'/../../../..')
+proj_cwd = os.path.abspath(__file__+'/../../../../..')
 
 #trajectory_profile_column_names = ["X-Coord","Z-Coord","Bearing","Speed","Current State"]
 #trajectory_profile_df = pd.DataFrame(columns=trajectory_profile_column_names)
