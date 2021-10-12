@@ -11,6 +11,9 @@ Help()
   echo "h             Display script help"
   echo "j <string>    Job file directory"
   echo "n <int>       Number of runs in the sequence"
+  echo "p <bool>     Parallelization flag"
+  
+
   echo
 }
 
