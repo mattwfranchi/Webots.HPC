@@ -228,6 +228,7 @@ YoubotFlag {
 Youbot {
   translation 0 0.102838 0
   controller "hanoi"
+  supervisor TRUE
   bodySlot [
     Kinect {
       translation 0.27 0 -0.02

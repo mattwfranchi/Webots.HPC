@@ -1,0 +1,1 @@
+WEBOTS_HOME=1

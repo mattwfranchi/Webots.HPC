@@ -202,8 +202,9 @@ int main(int argc, char **argv) {
 
   automatic_behavior();
 
-  wb_robot_cleanup();
-  wb_supervisor_simulation_quit(EXIT_SUCCESS);
 
+  wb_supervisor_simulation_quit(EXIT_SUCCESS);
+  
+  wb_robot_cleanup();
   return 0;
 }
