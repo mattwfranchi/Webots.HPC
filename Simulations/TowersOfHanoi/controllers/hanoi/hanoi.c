@@ -32,6 +32,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define TIME_STEP 32
 
@@ -189,6 +190,11 @@ static void automatic_behavior() {
 
 int main(int argc, char **argv) {
 
+  clock_t sim_start = clock();
+  time_t tag = time(NULL);
+
+
+
   FILE *output;
   output = fopen("../../output.csv", "a");
 
@@ -208,7 +214,9 @@ int main(int argc, char **argv) {
 
   automatic_behavior();
 
-  fprintf(output,"%f\n",wb_robot_get_time());
+  clock_t sim_stop = clock();
+
+  fprintf(output,"%lld, %lf\n",tag,(double)(sim_stop-sim_start)/ CLOCKS_PER_SEC);
   wb_supervisor_simulation_quit(EXIT_SUCCESS);
 
   wb_robot_cleanup();
