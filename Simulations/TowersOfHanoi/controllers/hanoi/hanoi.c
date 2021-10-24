@@ -35,6 +35,8 @@
 
 #define TIME_STEP 32
 
+
+
 static void step() {
   if (wb_robot_step(TIME_STEP) == -1) {
     wb_robot_cleanup();
@@ -186,6 +188,10 @@ static void automatic_behavior() {
 }
 
 int main(int argc, char **argv) {
+
+  FILE *output;
+  output = fopen("../../output.csv", "a");
+
   wb_robot_init();
 
   base_init();
@@ -202,9 +208,9 @@ int main(int argc, char **argv) {
 
   automatic_behavior();
 
-
+  fprintf(output,"%f\n",wb_robot_get_time());
   wb_supervisor_simulation_quit(EXIT_SUCCESS);
-  
+
   wb_robot_cleanup();
   return 0;
 }
