@@ -15,3 +15,6 @@ Webots.HPC is an in-development tool for running Webots robotics simulations on 
 - [Simulation of Urban Mobility (SUMO)](https://www.eclipse.org/sumo/)
 - [Singularity](https://sylabs.io/singularity/)
 - [High Performance Computing (HPC) Resource](https://www.usgs.gov/core-science-systems/sas/arc/about/what-high-performance-computing)
+
+## 3. Container Downloads
+- [Webots.HPC Docker Image](https://hub.docker.com/r/mattwfranchi/webots_sumo)
