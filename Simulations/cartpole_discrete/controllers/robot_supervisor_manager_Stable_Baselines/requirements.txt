@@ -1,0 +1,4 @@
+deepbots
+gym
+tensorflow==2.5.1
+stable-baselines3
