@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 
-from Pegasus.api import
+from Pegasus.api import *
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -16,7 +16,7 @@ props.write()
 # REPLICA CATALOG (INPUT FILES)
 simulationSpec = File("./highwaymerge.job")
 rc = ReplicaCatalog()\
-    .add_replica("local",simulationSpec,Path(".").resolve() \ "highwaymerge.job")
+    .add_replica("local",simulationSpec,Path(".").resolve() / "highwaymerge.job")\
 
 
 # TRANSFORMATION CATALOG (EXECUTABLES)
