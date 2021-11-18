@@ -62,7 +62,7 @@ Rscript = Transformation(
             )
 ## Creating Transformation Catalog
 tc = TransformationCatalog()\
-    .add_transformations(sbatch,qsub,sh,Rscript)
+    .add_transformations(sbatch,qsub,sh,Rscript) \
     .write()
 
 # WORKFLOW SPECIFICATION
