@@ -14,7 +14,7 @@ props.write()
 ##### TODO: configure condor.request props
 
 # REPLICA CATALOG (INPUT FILES)
-simulationSpec = File("../highwaymerge.job")
+simulationSpec = File("./highwaymerge.job")
 rc = ReplicaCatalog()\
     .add_replica("local",simulationSpec,Path(".").resolve() \ "highwaymerge.job")
 
