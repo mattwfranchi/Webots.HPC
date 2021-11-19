@@ -1,0 +1,1968 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+  "World 4 using the Open Street Map to Webots importer"
+    "Author: David Mansolino <david.mansolino@epfl.ch>"
+  ]
+  ERP 0.6
+  basicTimeStep 50
+  optimalThreadCount 4
+  physicsDisableTime 0
+  coordinateSystem "NUE"
+  lineScale 6
+  randomSeed -1
+  contactProperties [
+    ContactProperties {
+      material2 "ground"
+      softERP 0.3
+      softCFM 0.0001
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.14653310545626394 -0.9713309289889325 -0.18720116290995817 4.638635761154267
+  position 99.07110055547983 15.598267048381828 13.626408492681856
+  near 3
+  follow "vehicle"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation 0 -0.02 0
+  contactMaterial "ground"
+  size 1767 775
+  tileSize 1 1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/grass.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Crossroad {
+  translation 19.686653 0.01 57.191409
+  name "crossroad(2)"
+  id "112662665"
+  shape [
+    22.033352 0 -12.9422
+    6.503111 0 -7.750614
+    -2.518338 0 -4.71386
+    0.609115 0 5.309565
+    24.557726 0 2.092773
+    25.355007 0 -1.826964
+    25.362306 0 -2.983883
+    22.033352 0 -12.9422
+  ]
+  connectedRoadIDs [
+    "148882903"
+    "37435723_1"
+    "37435723_2"
+  ]
+}
+Crossroad {
+  translation 321.206676 0.01 123.47888
+  name "crossroad(3)"
+  id "112662748"
+  shape [
+    -10.587889 0 -19.930014
+    -16.099413 0 -15.12643
+    -18.563205 0 -11.975283
+    -3.554174 0 3.991284
+    4.77256 0 -2.405239
+    4.163367 0 -3.198261
+    -8.715754 0 -17.845266
+    -10.587889 0 -19.930014
+  ]
+  connectedRoadIDs [
+    "120086874"
+    "138272846"
+    "148882903"
+  ]
+}
+Crossroad {
+  translation 279.085198 0.01 -28.647978
+  name "crossroad(4)"
+  id "112664009"
+  shape [
+    22.237445 0 -12.572134
+    -2.519245 0 -4.713375
+    0.610136 0 5.309448
+    24.761252 0 2.01292
+    25.416215 0 -2.564866
+    22.237445 0 -12.572134
+  ]
+  connectedRoadIDs [
+    "-119200_1"
+    "-119200_2"
+    "12390612"
+  ]
+}
+Crossroad {
+  translation 269.081805 0.01 36.885175
+  name "crossroad(5)"
+  id "112664093"
+  shape [
+    2.130153 0 -2.951685
+    -3.368002 0 1.380784
+    -2.749077 0 2.166235
+    -2.628062 0 2.311556
+    17.845716 0 25.588678
+    23.343362 0 20.856897
+    25.308543 0 17.372924
+    2.130153 0 -2.951685
+  ]
+  connectedRoadIDs [
+    "120086871"
+    "12390612"
+    "138272844_1"
+  ]
+}
+Crossroad {
+  translation 396.438201 0.01 -88.867335
+  name "crossroad(6)"
+  id "112685489"
+  shape [
+    -11.952311 0 -5.490197
+    -13.982555 0 -1.025015
+    -10.773022 0 8.97243
+    1.604766 0 4.998722
+    1.689115 0 4.970854
+    2.635945 0 4.649118
+    0.548762 0 -1.923242
+    -0.742286 0 -5.29259
+    -11.952311 0 -5.490197
+  ]
+  connectedRoadIDs [
+    "-119155"
+    "12391897"
+    "334781289_1"
+  ]
+}
+Crossroad {
+  translation 94.80423 0.01 -169.090435
+  name "crossroad(7)"
+  id "112685553"
+  shape [
+    2.017742 0 -3.02964
+    -3.313742 0 1.506358
+    12.992898 0 21.64335
+    18.43701 0 17.243163
+    20.835662 0 13.959771
+    2.017742 0 -3.02964
+  ]
+  connectedRoadIDs [
+    "12391897"
+    "138272844_2"
+    "334781290"
+  ]
+}
+Crossroad {
+  translation 266.064876 0.01 -47.01289
+  name "crossroad(8)"
+  id "112687059_1"
+  shape [
+    9.855542 0 -12.574918
+    -2.571884 0 -4.68486
+    0.669572 0 5.30228
+    16.838968 0 0.108005
+    13.629435 0 -9.889439
+    9.855542 0 -12.574918
+  ]
+  connectedRoadIDs [
+    "12392104"
+    "334781289_1"
+    "334781289_2"
+  ]
+}
+Crossroad {
+  translation 188.379781 0.01 -57.509571
+  name "crossroad(9)"
+  id "112687141"
+  shape [
+    -6.538348 0 -17.951323
+    -10.319473 0 -16.332743
+    -15.461945 0 -11.583534
+    -1.900829 0 3.104328
+    3.253933 0 -1.631539
+    -6.538348 0 -17.951323
+  ]
+  connectedRoadIDs [
+    "12392104"
+    "138272844_1"
+    "138272844_2"
+  ]
+}
+Crossroad {
+  translation 221.087914 0.01 8.892044
+  name "crossroad(10)"
+  id "112688157"
+  shape [
+    2.006146 0 -3.037331
+    -3.307959 0 1.519015
+    14.116452 0 27.67175
+    18.015785 0 25.469226
+    23.240995 0 20.811203
+    2.006146 0 -3.037331
+  ]
+  connectedRoadIDs [
+    "12392305"
+    "138272846"
+    "334781291_3"
+  ]
+}
+Crossroad {
+  translation 168.275428 0.01 7.478726
+  name "crossroad(11)"
+  id "112688244"
+  shape [
+    -0.75656 0 -5.290569
+    -28.219988 0 3.898051
+    -24.891034 0 13.856367
+    -22.000823 0 17.156343
+    2.648476 0 4.64199
+    -0.75656 0 -5.290569
+  ]
+  connectedRoadIDs [
+    "12392305"
+    "334781288"
+    "37435723_2"
+  ]
+}
+Crossroad {
+  translation 160.2163 0.01 -12.483812
+  name "crossroad(12)"
+  id "112694754"
+  shape [
+    -0.68974 0 -5.299694
+    -36.654542 0 2.170602
+    -36.735111 0 6.862517
+    -33.37607 0 16.810725
+    2.58969 0 4.675041
+    -0.68974 0 -5.299694
+  ]
+  connectedRoadIDs [
+    "12393070"
+    "37434591_1"
+    "37434591_3"
+  ]
+}
+Crossroad {
+  translation 142.677443 0.01 -85.205525
+  name "crossroad(13)"
+  id "112694835"
+  shape [
+    -11.974718 0 -18.784465
+    -17.212858 0 -14.140987
+    -17.880422 0 -13.347714
+    -19.28444 0 -9.602219
+    -2.029006 0 3.022107
+    3.319326 0 -1.494012
+    2.674166 0 -2.25806
+    2.61907 0 -2.321739
+    -11.974718 0 -18.784465
+  ]
+  connectedRoadIDs [
+    "12393070"
+    "334781291_2"
+    "334781291_3"
+  ]
+}
+Crossroad {
+  translation 409.452416 0.01 -70.058619
+  name "crossroad(14)"
+  id "112703313"
+  shape [
+    -0.946698 0 -5.259873
+    -13.979336 0 -1.068014
+    -10.800566 0 8.939254
+    -6.618705 0 11.366299
+    2.814016 0 4.543547
+    1.555196 0 1.257523
+    -0.946698 0 -5.259873
+  ]
+  connectedRoadIDs [
+    "-119200_2"
+    "-119200_3"
+    "12393840"
+  ]
+}
+Crossroad {
+  translation 385.631145 0.01 200.054262
+  name "crossroad(15)"
+  id "112872188"
+  shape [
+    1.454346 0 -19.658265
+    -8.845142 0 -17.616071
+    -9.078428 0 -17.496989
+    -16.773975 0 -10.353562
+    -8.940564 0 5.506026
+    -8.41618 0 6.357508
+    5.149744 0 -1.021097
+    9.464947 0 -4.654543
+    1.454346 0 -19.658265
+  ]
+  connectedRoadIDs [
+    "111050965"
+    "120086874"
+    "42324498"
+  ]
+}
+Crossroad {
+  translation -468.669174 0.01 190.250015
+  name "crossroad(16)"
+  id "113025971"
+  shape []
+  connectedRoadIDs [
+    "-119097"
+    "37435724"
+  ]
+}
+Crossroad {
+  translation 74.745802 0.01 -161.83676
+  name "crossroad(17)"
+  id "113177751"
+  shape [
+    2.135269 0 -2.947987
+    -3.370391 0 1.374941
+    5.632229 0 18.255903
+    9.984656 0 16.539548
+    15.222796 0 11.89607
+    2.135269 0 -2.947987
+  ]
+  connectedRoadIDs [
+    "12393068"
+    "334781291_1"
+    "334781291_2"
+  ]
+}
+Crossroad {
+  translation 354.979877 0.01 140.079663
+  name "crossroad(18)"
+  id "113214327"
+  shape [
+    -12.499967 0 -31.198843
+    -16.951742 0 -30.107237
+    -22.389248 0 -25.721206
+    -4.311547 0 2.995507
+    -3.740974 0 3.816754
+    4.88212 0 -2.17426
+    -12.499967 0 -31.198843
+  ]
+  connectedRoadIDs [
+    "120086871"
+    "12393840"
+    "42324498"
+  ]
+}
+Crossroad {
+  translation 255.439043 0.01 -21.265042
+  name "crossroad(19)"
+  id "437608874"
+  shape []
+  connectedRoadIDs [
+    "-119200_1"
+    "37434588"
+  ]
+}
+Crossroad {
+  translation 241.082513 0.01 -38.904539
+  name "crossroad(20)"
+  id "437608875"
+  shape []
+  connectedRoadIDs [
+    "334781289_2"
+    "37434590"
+  ]
+}
+Crossroad {
+  translation 170.884179 0.01 -15.991129
+  name "crossroad(21)"
+  id "437608876"
+  shape []
+  connectedRoadIDs [
+    "37434590"
+    "37434591_1"
+  ]
+}
+Crossroad {
+  translation 185.406031 0.01 1.606087
+  name "crossroad(22)"
+  id "437608877"
+  shape []
+  connectedRoadIDs [
+    "334781288"
+    "37434588"
+  ]
+}
+Crossroad {
+  translation -407.533587 0.01 189.629212
+  name "crossroad(23)"
+  id "437641743"
+  shape []
+  connectedRoadIDs [
+    "37435722"
+    "37435723_1"
+  ]
+}
+Crossroad {
+  translation -413.050175 0.01 172.39634
+  name "crossroad(24)"
+  id "437641744"
+  shape []
+  connectedRoadIDs [
+    "37434591_2"
+    "37435724"
+  ]
+}
+Crossroad {
+  translation -462.500601 0.01 207.30292
+  name "crossroad(25)"
+  id "437641745"
+  shape []
+  connectedRoadIDs [
+    "-119102"
+    "37435722"
+  ]
+}
+Road {
+  translation -468.669174 0.01 190.250015
+  name "road(1)"
+  id "-119097"
+  startJunction "113025971"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -27.1069 0 9.069374
+    -328.071959 0 105.584024
+  ]
+  startingAngle [
+    1.260187
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -791.852172 0.01 313.535332
+  name "road(2)"
+  id "-119102"
+  endJunction "437641745"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    182.82344 0 -58.922812
+    329.351571 0 -106.232413
+  ]
+  endingAngle [
+    -1.881986
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 861.896867 0.01 -340.764691
+  name "road(3)"
+  id "-119155"
+  endJunction "112685489"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -12.787711 0 12.141269
+    -51.706471 0 47.714721
+    -105.921891 0 87.431855
+    -126.34579 0 102.798809
+    -148.222741 0 117.36991
+    -190.374015 0 142.984143
+    -205.139484 0 152.547987
+    -224.232108 0 164.161555
+    -248.725766 0 176.03575
+    -265.566734 0 183.464409
+    -293.702714 0 194.069897
+    -320.346994 0 202.587851
+    -464.412078 0 251.541721
+  ]
+  endingAngle [
+    1.263299
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 304.129996 0.01 -28.61687
+  name "road(4)"
+  id "12390612"
+  startJunction "112664009"
+  endJunction "112664093"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    3.584359 0 0.350508
+    21.632711 0 5.249902
+    28.539833 0 8.669692
+    35.520671 0 13.421548
+    45.080089 0 23.753953
+    49.16332 0 33.125951
+    50.548396 0 39.023349
+    51.802069 0 47.91392
+    51.722198 0 53.902705
+    50.130057 0 63.531784
+    43.740262 0 76.20273
+    36.596798 0 83.650242
+    26.817096 0 89.842453
+    14.159291 0 92.335836
+    0.274194 0 90.819643
+    -10.722239 0 84.616956
+  ]
+  startingAngle [
+    -1.428687
+  ]
+  endingAngle [
+    2.084373
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 383.648827 0.01 -92.516551
+  name "road(5)"
+  id "12391897"
+  startJunction "112685489"
+  endJunction "112685553"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -27.584342 0 -7.870692
+    -47.662653 0 -18.343363
+    -68.434311 0 -31.709232
+    -79.469213 0 -41.173877
+    -96.071866 0 -51.600104
+    -106.420894 0 -57.616958
+    -116.889484 0 -61.527854
+    -124.549167 0 -63.404694
+    -137.069969 0 -64.34799
+    -148.235002 0 -64.053053
+    -158.044262 0 -62.519889
+    -167.127683 0 -60.533352
+    -182.556375 0 -56.080092
+    -205.718583 0 -47.958411
+    -215.44816 0 -45.53674
+    -223.143286 0 -44.751817
+    -237.131984 0 -45.381753
+    -242.68791 0 -47.230486
+    -252.546361 0 -50.933443
+    -261.568031 0 -54.958019
+    -269.189635 0 -60.997913
+  ]
+  startingAngle [
+    1.997538
+  ]
+  endingAngle [
+    2.201727
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 180.000535 0.01 -74.672864
+  name "road(6)"
+  id "12392104"
+  startJunction "112687141"
+  endJunction "112687059_1"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -0.107625 0 -0.220449
+    -1.983621 0 -18.72521
+    0.698805 0 -33.298052
+    6.596423 0 -44.056692
+    12.453711 0 -50.412222
+    19.495375 0 -57.084742
+    32.110689 0 -63.239325
+    43.325929 0 -67.305004
+    46.813535 0 -68.145928
+    60.824405 0 -69.17942
+    67.77598 0 -69.086799
+    71.977601 0 -68.587123
+    85.206482 0 -65.859613
+    90.757952 0 -63.678094
+    97.65927 0 -59.814736
+    102.552721 0 -56.310902
+    109.403769 0 -48.676819
+    113.509293 0 -40.968404
+    115.522878 0 -34.175255
+    117.394729 0 -23.612611
+    117.378279 0 -15.515444
+    113.01851 0 -4.148479
+    102.297246 0 10.905083
+    97.558751 0 16.251264
+  ]
+  startingAngle [
+    2.737126
+  ]
+  endingAngle [
+    0.618465
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 236.94619 0.01 35.579931
+  name "road(7)"
+  id "12392305"
+  startJunction "112688157"
+  endJunction "112688244"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0, 1.455426 0 2.449336, 2.079286 0 10.555033, 1.841529 0 21.533251, 1.12295 0 27.402601, -1.098981 0 36.246843, -4.670731 0 43.409256, -8.214403 0 48.464505, -13.878035 0 54.711666, -22.366755 0 60.144733, -31.483905 0 64.682052, -46.922512 0 69.911644, -58.745205 0 71.528955, -70.623915 0 70.483382, -84.578278 0 67.302649, -92.222998 0 64.316864, -98.476544 0 59.907608, -103.257786 0 54.852418, -110.079263 0 45.000381, -112.812838 0 37.310302, -114.072629 0 28.863382, -113.970765 0 21.211048, -113.171127 0 16.119233, -110.989162 0 10.269358, -105.275376 0 0.251424, -95.352647 0 -9.821397, -91.991318 0 -12.451703
+  ]
+  startingAngle [
+    -0.51417
+  ]
+  endingAngle [
+    -2.290095
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 82.2393 -0.01 -144.315
+  name "road(8)"
+  id "12393068"
+  startJunction "113177751"
+  endJunction "112687059"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  roadBorderWidth [
+    0.1
+  ]
+  leftBorder FALSE
+  rightBarrier TRUE
+  wayPoints [
+    0 0 0
+    2.55887 0 5.9835
+    2.750468 0 17.022709
+    -0.203092 0 25.857247
+    -8.060509 0 38.84161
+    -13.004206 0 45.985827
+    -15.873638 0 48.498878
+    -19.4114 0 50
+    0 0 151.8
+    -66.7 0 173.8
+  ]
+  startingAngle [
+    -0.375621
+  ]
+  endingAngle [
+    0.728139
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+  pavementAppearance Pavement {
+    type "tiles"
+  }
+  roadBoundingObject TRUE
+  contactMaterial "ground"
+}
+Road {
+  translation 123.527419 0.01 -8.313489
+  name "road(9)"
+  id "12393070"
+  startJunction "112694754"
+  endJunction "112694835"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -1.789158 0 -0.023816
+    -14.308288 0 -1.077834
+    -29.618612 0 -5.49667
+    -37.251642 0 -9.369629
+    -46.221264 0 -15.922518
+    -51.712205 0 -22.650959
+    -54.40014 0 -26.901796
+    -60.501839 0 -42.734043
+    -61.12734 0 -50.728819
+    -59.609257 0 -61.689998
+    -57.419928 0 -68.094403
+    -52.38035 0 -75.570114
+    -49.590583 0 -78.971608
+    -45.338809 0 -82.242725
+    -38.325296 0 -86.808167
+    -22.165015 0 -91.25188
+    -12.469448 0 -91.122843
+    -1.972816 0 -89.319287
+    0.567592 0 -88.367002
+  ]
+  startingAngle [
+    1.587966
+  ]
+  endingAngle [
+    -1.212153
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 340.537084 0.01 109.357215
+  name "road(10)"
+  id "12393840"
+  startJunction "113214327"
+  endJunction "112703313"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -4.167994 0 -15.669776
+    -0.392303 0 -31.25959
+    6.341142 0 -42.262111
+    17.676012 0 -55.310799
+    21.986997 0 -63.017922
+    26.227232 0 -72.278912
+    31.744312 0 -101.821805
+    33.852981 0 -115.880919
+    36.793733 0 -130.594472
+    40.20637 0 -139.533725
+    45.743467 0 -149.997563
+    55.427671 0 -162.735459
+    60.546103 0 -169.065494
+  ]
+  startingAngle [
+    2.90113
+  ]
+  endingAngle [
+    -2.615729
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 185.406031 5.01 1.606087
+  name "road(11)"
+  id "37434588"
+  startJunction "437608877"
+  endJunction "437608874"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    32.68066 0 -11.211624
+    70.033012 0 -22.871129
+  ]
+  startingAngle [
+    -1.901057
+  ]
+  endingAngle [
+    -1.873431
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 241.082513 5.01 -38.904539
+  name "road(12)"
+  id "37434590"
+  startJunction "437608875"
+  endJunction "437608876"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -37.404487 0 12.13584
+    -70.198334 0 22.91341
+  ]
+  startingAngle [
+    1.257063
+  ]
+  endingAngle [
+    1.253155
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -462.500601 5.01 207.30292
+  name "road(13)"
+  id "37435722"
+  startJunction "437641745"
+  endJunction "437641743"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    15.103754 0 -4.857967
+    54.967014 0 -17.673708
+  ]
+  startingAngle [
+    -1.881986
+  ]
+  endingAngle [
+    -1.881853
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -413.050175 5.01 172.39634
+  name "road(14)"
+  id "37435724"
+  startJunction "437641744"
+  endJunction "113025971"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -55.618999 0 17.853675
+  ]
+  startingAngle [
+    1.260187
+  ]
+  endingAngle [
+    1.260187
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 381.935747 0.01 181.417094
+  name "Laurens Road"
+  id "42324498"
+  startJunction "112872188"
+  endJunction "113214327"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 17.8816
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -1.001742 0 -5.052132
+    -6.490861 0 -11.891669
+    -16.283601 0 -25.976428
+    -26.385297 0 -40.516183
+  ]
+  startingAngle [
+    2.94585
+  ]
+  endingAngle [
+    2.53439
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 585.932955 0.01 607.05521
+  name "Laurens Road(1)"
+  id "111050965"
+  endJunction "112872188"
+  width 21
+  numberOfLanes 6
+  numberOfForwardLanes 5
+  speedLimit 17.8816
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+    RoadLine {
+    }
+    RoadLine {
+    }
+    RoadLine {
+      type "continuous"
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -6.976072 0 -14.646372
+    -37.077611 0 -77.908835
+    -46.331666 0 -97.344214
+    -58.957951 0 -123.879348
+    -66.793999 0 -140.589231
+    -80.651745 0 -170.135706
+    -100.434553 0 -212.229046
+    -127.315117 0 -269.491555
+    -138.256163 0 -292.787284
+    -154.116084 0 -326.575428
+    -158.706116 0 -336.342468
+    -177.568029 0 -369.349794
+    -183.289013 0 -379.37594
+    -199.48071 0 -405.667664
+  ]
+  endingAngle [
+    2.643439
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 335.301442 0.01 112.171846
+  name "Laurens Road(2)"
+  id "120086871"
+  startJunction "113214327"
+  endJunction "112664093"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -45.721029 0 -51.981318
+  ]
+  startingAngle [
+    2.462825
+  ]
+  endingAngle [
+    2.430924
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 321.815869 0.01 124.271903
+  name "Laurens Road(3)"
+  id "120086874"
+  startJunction "112662748"
+  endJunction "112872188"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 17.8816
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    31.339584 0 40.796602
+    50.889074 0 61.857083
+  ]
+  startingAngle [
+    -0.655042
+  ]
+  endingAngle [
+    -0.748208
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 241.716304 0.01 32.032258
+  name "Laurens Road(4)"
+  id "138272846"
+  startJunction "112688157"
+  endJunction "112662748"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    3.33865 0 3.745183
+    66.263672 0 73.816471
+  ]
+  startingAngle [
+    -0.728072
+  ]
+  endingAngle [
+    -0.716874
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 44.64302 0.01 57.324313
+  name "road(15)"
+  id "148882903"
+  startJunction "112662665"
+  endJunction "112662748"
+  width 4
+  numberOfLanes 1
+  speedLimit 36.111111
+  lines []
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    19.194128 0 3.904116
+    46.088168 0 15.032606
+    71.173702 0 34.87784
+    93.93048 0 51.663944
+    117.146399 0 59.382716
+    145.866841 0 60.430738
+    169.920877 0 56.048008
+    191.032556 0 44.549241
+    212.392871 0 39.110237
+    229.634156 0 39.340014
+    249.50183 0 44.995697
+    259.232347 0 52.603711
+  ]
+  startingAngle [
+    -1.370132
+  ]
+  endingAngle [
+    -0.907208
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 169.221386 0.01 7.154436
+  name "road(16)"
+  id "334781288"
+  startJunction "112688244"
+  endJunction "437608877"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    16.184645 0 -5.548349
+  ]
+  startingAngle [
+    -1.901057
+  ]
+  endingAngle [
+    -1.901057
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 94.15623 0.01 -169.852076
+  name "Laurens Road(5)"
+  id "334781290"
+  startJunction "112685553"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -5.747375 0 -6.755302
+    -31.148991 0 -36.598784
+    -39.699834 0 -47.139296
+    -41.769684 0 -49.718058
+    -95.66303 0 -111.67536
+    -127.282141 0 -148.02365
+    -129.263518 0 -150.379369
+    -148.930408 0 -174.666666
+    -171.117603 0 -202.071061
+  ]
+  startingAngle [
+    2.436637
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 255.439043 0.01 -21.265042
+  name "road(17)"
+  id "-119200_1"
+  startJunction "437608874"
+  endJunction "112664009"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    22.691601 0 -7.084899
+  ]
+  startingAngle [
+    -1.873431
+  ]
+  endingAngle [
+    -1.873431
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 268.462881 0.01 36.099724
+  name "Laurens Road(6)"
+  id "138272844_1"
+  startJunction "112664093"
+  endJunction "112687141"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -29.644091 0 -37.620071
+    -65.979559 0 -78.258272
+    -79.406547 0 -92.872901
+  ]
+  startingAngle [
+    2.47422
+  ]
+  endingAngle [
+    2.398522
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 175.489072 0.01 -71.46771
+  name "Laurens Road(7)"
+  id "138272844_2"
+  startJunction "112687141"
+  endJunction "112685553"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -14.272474 0 -15.454323
+    -64.969888 0 -78.179469
+  ]
+  startingAngle [
+    2.395931
+  ]
+  endingAngle [
+    2.461843
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 384.060413 0.01 -84.893628
+  name "road(18)"
+  id "334781289_1"
+  startJunction "112685489"
+  endJunction "112687059_1"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -102.761336 0 32.99002
+  ]
+  startingAngle [
+    1.260154
+  ]
+  endingAngle [
+    1.260154
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 265.11372 0.01 -46.70418
+  name "road(19)"
+  id "334781289_2"
+  startJunction "112687059_1"
+  endJunction "437608875"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -24.031206 0 7.799641
+  ]
+  startingAngle [
+    1.25696
+  ]
+  endingAngle [
+    1.257063
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -103.705967 0.01 -373.066025
+  name "Laurens Road(8)"
+  id "334781291_1"
+  endJunction "113177751"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    44.241414 0 48.983496
+    86.961186 0 101.596361
+    133.281096 0 158.627694
+    152.247 0 179.866584
+    165.434533 0 194.65057
+    177.834208 0 210.442741
+  ]
+  endingAngle [
+    -0.665638
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 0.6 -0.01 42.9
+  name "road(20)"
+  id "37434591_2"
+  startJunction "112687059_3"
+  endJunction "437641744"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    -107 0 33
+    -198.02349 0 61.944916
+    -332.524655 0 105.083917
+    -413.150661 0 130.902677
+  ]
+  startingAngle [
+    1.264935
+  ]
+  endingAngle [
+    1.260187
+  ]
+  startLine [
+    "textures/line_base_color_dashed.png"
+    "textures/line_base_color_dashed.png"
+    "textures/line_base_color_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -1 -0.01 42.6
+  name "mainroad(2)"
+  id "37434591_4"
+  startJunction "112687059"
+  endJunction "112687059_3"
+  width 14
+  numberOfLanes 4
+  numberOfForwardLanes 4
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+      width 0.2
+    }
+    RoadLine {
+      width 0.2
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    3.5 0 -3.5
+    -91.2 0 27
+  ]
+  startingAngle [
+    1.264935
+  ]
+  endingAngle [
+    1.260187
+  ]
+  splineSubdivision 0
+}
+Crossroad {
+  translation 3.7 0 40.6
+  name "crossroad(1)"
+  id "112687059"
+  shape [
+    11 0 -12.9
+    -3.6 0 -8
+    0.9 0 5.2
+    16.8 0 0.1
+    13.5 0 -9.9
+    10.4 0 -12.6
+  ]
+  connectedRoadIDs [
+    "37434591_3"
+    "12393068"
+    "37434591_4"
+  ]
+}
+Crossroad {
+  translation -92.7 0 67.7
+  rotation 0 1 0 -9.42477796076938
+  name "crossroad(263)"
+  id "112687059_3"
+  shape [
+    9.3 0 -12.3
+    -2.7 0 -8.6
+    1.6 0 4.8
+    15.4 0 -3.1
+    13.6 0 -8.9
+    13.6 0 -9
+    12.2 0 -13.2
+  ]
+  connectedRoadIDs [
+    "37434591_4"
+    "37434591_2"
+  ]
+}
+Road {
+  translation 170.884179 0.01 -15.991129
+  name "road(21)"
+  id "37434591_1"
+  startJunction "437608876"
+  endJunction "112694754"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -9.717904 0 3.194991
+  ]
+  startingAngle [
+    1.253155
+  ]
+  endingAngle [
+    1.253155
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 125.161 0.01 0
+  name "road(22)"
+  id "37434591_3"
+  startJunction "112694754"
+  endJunction "112687059"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    -87.257569 0 29.462769
+    -106.3 0 35.7901
+  ]
+  startingAngle [
+    1.245163
+  ]
+  endingAngle [
+    1.246753
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 87.349528 0.01 -147.618951
+  name "Laurens Road(9)"
+  id "334781291_2"
+  startJunction "113177751"
+  endJunction "112694835"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    40.734127 0 45.9507
+  ]
+  startingAngle [
+    -0.725292
+  ]
+  endingAngle [
+    -0.725292
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 143.322603 0.01 -84.441477
+  name "Laurens Road(10)"
+  id "334781291_3"
+  startJunction "112694835"
+  endJunction "112688157"
+  numberOfForwardLanes 2
+  speedLimit 17.8816
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    20.753923 0 24.578375
+    36.281811 0 44.950957
+    77.114405 0 92.574363
+  ]
+  startingAngle [
+    -0.701233
+  ]
+  endingAngle [
+    -0.708778
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 302.912028 0.01 -36.216478
+  name "road(23)"
+  id "-119200_2"
+  startJunction "112664009"
+  endJunction "112703313"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    94.150437 0 -29.906521
+  ]
+  startingAngle [
+    -1.878363
+  ]
+  endingAngle [
+    -1.878363
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 410.387215 0.01 -70.41722
+  name "road(24)"
+  id "-119200_3"
+  startJunction "112703313"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    27.84694 0 -10.682433
+    55.864443 0 -19.293269
+    143.530457 0 -48.515632
+    184.934058 0 -66.153898
+    205.284868 0 -76.086886
+    264.98482 0 -107.345675
+    299.466976 0 -127.294449
+    323.452097 0 -142.170126
+    357.915759 0 -167.554179
+    401.655704 0 -202.464279
+    422.193552 0 -219.493396
+    467.414462 0 -262.480779
+  ]
+  startingAngle [
+    -1.937329
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -407.533587 0.01 189.629212
+  name "road(25)"
+  id "37435723_1"
+  startJunction "437641743"
+  endJunction "112662665"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    83.307974 0 -26.637241
+    216.612535 0 -69.237388
+    252.358995 0 -81.296983
+    363.009804 0 -112.548996
+    369.254543 0 -114.351671
+    426.265628 0 -132.139951
+  ]
+  startingAngle [
+    -1.881853
+  ]
+  endingAngle [
+    -1.873239
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 43.384482 0.01 49.228367
+  name "road(26)"
+  id "37435723_2"
+  startJunction "112662665"
+  endJunction "112688244"
+  width 10.5
+  numberOfLanes 3
+  numberOfForwardLanes 3
+  speedLimit 26.8224
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    98.335436 0 -32.872432
+  ]
+  startingAngle [
+    -1.893407
+  ]
+  endingAngle [
+    -1.893407
+  ]
+  startLine [
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+    "textures/road_line_dashed.png"
+  ]
+  endLine [
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+    "textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+SimpleBuilding {
+  translation 518.59 0 -40.41
+  name "building(1)"
+  floorHeight 3.65
+  floorNumber 4
+  corners [
+    0 0
+    -8.14 -18.28
+    16.84 -29.39
+    24.98 -11.12
+  ]
+  wallType "old brick wall"
+}
+SimpleBuilding {
+  translation 491.59 0 -51
+  name "building(2)"
+  floorHeight 3.23
+  corners [
+    0 0
+    4.57 18.23
+    -53.44 32.75
+    -58 14.52
+  ]
+  wallType "office building"
+}
+SumoInterface {
+  gui FALSE
+  useNetconvert FALSE
+  step 50
+  port 8873
+  seed 0
+}
+DEF WEBOTS_VEHICLE0 BmwX5 {
+  translation 60.3629 0.335035 14.6734
+  rotation 0.005592807266595692 0.9999758151282979 0.004133964849253025 -1.25
+  controller "av_m_controller"
+  supervisor TRUE
+  sensorsSlotFront [
+    TouchSensor {
+      translation 0 -0.1 0
+      name "cav_touch_front"
+      boundingObject Box {
+        size 1.5 0.6 0.3
+      }
+    }
+    DEF est_front DelphiESR {
+      name "esr_front"
+    }
+    DelphiESR {
+      translation -0.97999 0.12 2.77
+      rotation 0 1 0 1.5708
+      name "esr_left"
+    }
+  ]
+  sensorsSlotRear [
+    TouchSensor {
+      translation 0 0.3 0
+      name "cav_touch_rear"
+      boundingObject Box {
+        size 1.5 0.6 0.3
+      }
+    }
+    DelphiESR {
+      translation 0 0.18 0
+      name "esr_back"
+    }
+  ]
+  sensorsSlotTop [
+    Receiver {
+    }
+    Compass {
+      rotation 0 1 0 3.14
+    }
+    Camera {
+      name "camera_left"
+    }
+    Camera {
+      name "camera_right"
+    }
+  ]
+  sensorsSlotCenter [
+    GPS {
+      translation 0 0 -1.31
+    }
+    TouchSensor {
+      translation 0 0.84 -1.34
+      name "cav_touch_side"
+      boundingObject Box {
+        size 2.4 0.6 4
+      }
+    }
+  ]
+}
