@@ -3,7 +3,6 @@
 **Matt Franchi, Rebecca Kahn, Clemson University**
 *Data Intensive Computing Environments (DICE) Lab*
 
-**Advised by Amy Apon, Linh Ngo, Ronnie Chowdhury, Sakib Khan, Ken Kennedy (all PhD)**
 
 
 ---
